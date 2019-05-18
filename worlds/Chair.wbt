@@ -2,8 +2,8 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.17102641798961027 -0.982826009779803 -0.06930367125884403 0.7821342741429929
-  position -2.315422529520177 1.0706009492089779 2.8450489829433407
+  orientation 0.2076489962860685 -0.9664160346317368 -0.15139994170427556 4.990496407612675
+  position 2.9450412913841206 1.6322197588547311 1.2590059825069602
 }
 TexturedBackground {
 }
@@ -13,24 +13,24 @@ Floor {
 }
 DEF S_CYL1 Solid {
   translation 0 0.25 0
-  rotation -0.7071067811865475 0 0.7071067811865475 -0.1986
+  rotation 0.7071067811865475 0 -0.7071067811865475 0.4973996938995747
   children [
     Shape {
       geometry Cylinder {
-        height 0.61
-        radius 0.05
+        height 0.7
+        radius 0.02
       }
     }
   ]
 }
 DEF S_CYL2 Solid {
   translation 0.4 0.25 0
-  rotation -0.7071067811865475 0 -0.7071067811865475 -0.1986
+  rotation 0.7071067811865475 0 0.7071067811865475 0.4974
   children [
     Shape {
       geometry Cylinder {
-        height 0.61
-        radius 0.05
+        height 0.7
+        radius 0.02
       }
     }
   ]
@@ -38,12 +38,12 @@ DEF S_CYL2 Solid {
 }
 DEF S_CYL3 Solid {
   translation 0.4 0.25 0.4
-  rotation 0.7071067811865475 0 -0.7071067811865475 -0.1986
+  rotation -0.7071067811865475 0 0.7071067811865475 0.497
   children [
     Shape {
       geometry Cylinder {
-        height 0.61
-        radius 0.05
+        height 0.7
+        radius 0.02
       }
     }
   ]
@@ -51,19 +51,19 @@ DEF S_CYL3 Solid {
 }
 DEF S_CYL4 Solid {
   translation 0 0.25 0.4
-  rotation 0.7071067811865475 0 0.7071067811865475 -0.1986
+  rotation -0.7071067811865475 0 -0.7071067811865475 0.497
   children [
     Shape {
       geometry Cylinder {
-        height 0.61
-        radius 0.05
+        height 0.7
+        radius 0.02
       }
     }
   ]
   name "solid(3)"
 }
 DEF S_BOX1 Solid {
-  translation 0.2 0.35 0
+  translation 0.19000000000000006 0.3896472382267758 0.03863703305983613
   rotation 1 0 0 0.2617993870000007
   children [
     Shape {
@@ -75,7 +75,7 @@ DEF S_BOX1 Solid {
   name "solid(4)"
 }
 DEF S_BOX2 Solid {
-  translation 0.2 0.35 0.4
+  translation 0.2 0.41294095221653027 0.35170370867520473
   rotation 1 0 0 0.2617993870000007
   children [
     Shape {
@@ -87,7 +87,7 @@ DEF S_BOX2 Solid {
   name "solid(5)"
 }
 DEF S_BOX3 Solid {
-  translation 0.4 0.35 0.22
+  translation 0.3500000000003958 0.4 0.22000019896527648
   rotation 0 1 0 1.5708003061004252
   children [
     Shape {
@@ -98,8 +98,8 @@ DEF S_BOX3 Solid {
   ]
   name "solid(6)"
 }
-DEF S_BOX3 Solid {
-  translation 0 0.35 0.22
+DEF S_BOX4 Solid {
+  translation 0.0399999999996833 0.4 0.18999984082801635
   rotation 0 1 0 1.5708003061004252
   children [
     Shape {
@@ -109,4 +109,52 @@ DEF S_BOX3 Solid {
     }
   ]
   name "solid(7)"
+}
+DEF S_BOX5 Solid {
+  translation 0.2 0.5452055756330603 0.10833235143934451
+  rotation 1 0 0 0.2617993870000007
+  children [
+    Shape {
+      geometry Box {
+        size 0.15 0.01 0.02
+      }
+    }
+  ]
+  name "solid(8)"
+}
+DEF S_BOX6 Solid {
+  translation 0.2 0.5267663862011618 0.3066891113019806
+  rotation 1 0 0 0.2617993870000007
+  children [
+    Shape {
+      geometry Box {
+        size 0.15 0.01 0.02
+      }
+    }
+  ]
+  name "solid(10)"
+}
+DEF S_BOX7 Solid {
+  translation 0.28999961737422797 0.52 0.19668888172733018
+  rotation 0 1 0 1.5708003061004252
+  children [
+    Shape {
+      geometry Box {
+        size 0.15 0.01 0.02
+      }
+    }
+  ]
+  name "solid(9)"
+}
+DEF S_BOX8 Solid {
+  translation 0.1 0.52 0.19668963779538076
+  rotation 0 1 0 1.5708003061004252
+  children [
+    Shape {
+      geometry Box {
+        size 0.15 0.01 0.02
+      }
+    }
+  ]
+  name "solid(11)"
 }
