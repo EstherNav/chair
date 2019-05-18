@@ -1,0 +1,63 @@
+#VRML_SIM R2019a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.26638740129230554 0.9495961045136595 0.16524221834995678 1.1193223539627823
+  position 2.3277250275173653 1.2095438631376247 1.327356292552712
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+}
+DEF S_CYL1 Solid {
+  translation 0 0.25 0
+  children [
+    Shape {
+      geometry Cylinder {
+        height 0.5
+        radius 0.05
+      }
+    }
+  ]
+}
+DEF S_CYL2 Solid {
+  translation 0.4 0.25 0
+  children [
+    Shape {
+      geometry Cylinder {
+        height 0.5
+        radius 0.05
+      }
+    }
+  ]
+  name "solid(1)"
+}
+DEF S_CYL3 Solid {
+  translation 0.4 0.25 0.4
+  children [
+    Shape {
+      geometry Cylinder {
+        height 0.5
+        radius 0.05
+      }
+    }
+  ]
+  name "solid(2)"
+}
+DEF S_CYL1 Solid {
+  translation 0 0.25 0.4
+  children [
+    Shape {
+      geometry Cylinder {
+        height 0.5
+        radius 0.05
+      }
+    }
+  ]
+  name "solid(3)"
+}
+Solid {
+  name "solid(4)"
+}
