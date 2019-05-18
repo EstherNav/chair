@@ -2,8 +2,8 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.02305429540114196 -0.9905843106945272 -0.13494896394342976 2.8063120088714437
-  position -0.17927754031569487 0.7238043130000177 -1.521772244152506
+  orientation 0 -1 0 1.5707963267948966
+  position -2.2160048732518605 0.3896472382267757 0.03863703305983626
 }
 TexturedBackground {
 }
@@ -177,12 +177,12 @@ DEF S_BOX8 Solid {
   ]
   name "solid(11)"
 }
-DEF S_CHAIR Solid {
-  translation 0.19999999999999998 0.56 0.19
+DEF S_SIT Solid {
+  translation 0.19999999999999998 0.56 0.21000000000000002
   children [
     Shape {
       appearance PBRAppearance {
-        baseColor 0.3607843137254902 0.20784313725490197 0.4
+        baseColor 0.12549019607843137 0.2901960784313726 0.5294117647058824
       }
       geometry Cylinder {
         height 0.03
