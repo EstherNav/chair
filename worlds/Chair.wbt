@@ -2,8 +2,8 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.26638740129230554 0.9495961045136595 0.16524221834995678 1.1193223539627823
-  position 2.3277250275173653 1.2095438631376247 1.327356292552712
+  orientation -0.17102641798961027 -0.982826009779803 -0.06930367125884403 0.7821342741429929
+  position -2.315422529520177 1.0706009492089779 2.8450489829433407
 }
 TexturedBackground {
 }
@@ -13,10 +13,11 @@ Floor {
 }
 DEF S_CYL1 Solid {
   translation 0 0.25 0
+  rotation -0.7071067811865475 0 0.7071067811865475 -0.1986
   children [
     Shape {
       geometry Cylinder {
-        height 0.5
+        height 0.61
         radius 0.05
       }
     }
@@ -24,10 +25,11 @@ DEF S_CYL1 Solid {
 }
 DEF S_CYL2 Solid {
   translation 0.4 0.25 0
+  rotation -0.7071067811865475 0 -0.7071067811865475 -0.1986
   children [
     Shape {
       geometry Cylinder {
-        height 0.5
+        height 0.61
         radius 0.05
       }
     }
@@ -36,28 +38,75 @@ DEF S_CYL2 Solid {
 }
 DEF S_CYL3 Solid {
   translation 0.4 0.25 0.4
+  rotation 0.7071067811865475 0 -0.7071067811865475 -0.1986
   children [
     Shape {
       geometry Cylinder {
-        height 0.5
+        height 0.61
         radius 0.05
       }
     }
   ]
   name "solid(2)"
 }
-DEF S_CYL1 Solid {
+DEF S_CYL4 Solid {
   translation 0 0.25 0.4
+  rotation 0.7071067811865475 0 0.7071067811865475 -0.1986
   children [
     Shape {
       geometry Cylinder {
-        height 0.5
+        height 0.61
         radius 0.05
       }
     }
   ]
   name "solid(3)"
 }
-Solid {
+DEF S_BOX1 Solid {
+  translation 0.2 0.35 0
+  rotation 1 0 0 0.2617993870000007
+  children [
+    Shape {
+      geometry Box {
+        size 0.28 0.01 0.02
+      }
+    }
+  ]
   name "solid(4)"
+}
+DEF S_BOX2 Solid {
+  translation 0.2 0.35 0.4
+  rotation 1 0 0 0.2617993870000007
+  children [
+    Shape {
+      geometry Box {
+        size 0.28 0.01 0.02
+      }
+    }
+  ]
+  name "solid(5)"
+}
+DEF S_BOX3 Solid {
+  translation 0.4 0.35 0.22
+  rotation 0 1 0 1.5708003061004252
+  children [
+    Shape {
+      geometry Box {
+        size 0.28 0.01 0.02
+      }
+    }
+  ]
+  name "solid(6)"
+}
+DEF S_BOX3 Solid {
+  translation 0 0.35 0.22
+  rotation 0 1 0 1.5708003061004252
+  children [
+    Shape {
+      geometry Box {
+        size 0.28 0.01 0.02
+      }
+    }
+  ]
+  name "solid(7)"
 }
